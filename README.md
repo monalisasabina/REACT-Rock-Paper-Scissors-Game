@@ -29,17 +29,17 @@ This project is designed as a small practice application for understanding **Rea
 
 ## Project Structure
 
+```
 rock-paper-scissors
-│
+|
 ├── src
-│ ├── App.jsx
-│ ├── App.css
-│ └── main.jsx
-│
-├── index.html
-├── package.json
-└── README.md
-
+│   ├── App.css
+│   ├── App.jsx
+│   ├── assets
+│   │   └── react.svg
+│   ├── index.css
+│   └── main.jsx
+```
 
 ---
 

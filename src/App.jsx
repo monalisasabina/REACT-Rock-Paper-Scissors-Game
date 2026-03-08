@@ -47,6 +47,8 @@ function App(){
 
     <div className="app_cont">
 
+       <div className="app_content">
+
         <h1>ROCK PAPER SCISSORS</h1>
 
         {/* USER CHOICE */}
@@ -56,18 +58,24 @@ function App(){
           <button onClick={() => { setUserChoice("Scissors"); computerBrain(); }}>Scissors ✂️</button>
         </div>
 
-        <p>You chose: {userChoice}</p>
+        <p>You chose: <span>{userChoice}</span></p>
 
         {/* COMPUTER CHOICE */}
-        <p>Computer chose: {computerChoice}</p>
+        <p>Computer chose: <span>{computerChoice}</span></p>
 
         {/* Result */}
-        <p>{determineWinner()}</p>
+        <p className="result"> {determineWinner()} </p>
 
-        <button onClick={resetGame}>Play Again</button>  
+        <button id="reset_btn" onClick={resetGame}>Play Again</button>  
 
-        <footer>Monalisa 😎</footer>
+        
     </div>
+
+    <footer>Monalisa 😎</footer>
+
+    </div>
+
+   
 
 
   )

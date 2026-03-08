@@ -1,16 +1,130 @@
-# React + Vite
+# Rock Paper Scissors (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **Rock Paper Scissors** game built with **React**.  
+The player selects Rock, Paper, or Scissors, and the computer randomly selects its move. The game then displays both choices.
 
-Currently, two official plugins are available:
+This project is designed as a small practice application for understanding **React state management, event handling, and basic game logic**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Player selects **Rock**, **Paper**, or **Scissors**
+- Computer generates a **random choice**
+- Displays:
+  - Player choice
+  - Computer choice
+- Built with **React functional components and hooks**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- **React**
+- **JavaScript**
+- **Vite**
+- **CSS**
+
+---
+
+## Project Structure
+
+rock-paper-scissors
+│
+├── src
+│ ├── App.jsx
+│ ├── App.css
+│ └── main.jsx
+│
+├── index.html
+├── package.json
+└── README.md
+
+
+---
+
+## Installation
+
+Clone the repository:
+
+```
+git clone https://github.com/your-username/rock-paper-scissors.git
+```
+
+Navigate into the project folder:
+
+```bash
+cd rock-paper-scissors
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+
+Open the URL shown in the terminal to view the app in your browser.
+
+---
+
+## How the Game Works
+
+1. The player clicks one of the buttons:
+   - Rock
+   - Paper
+   - Scissors
+
+2. The computer randomly selects a move from the same options.
+
+3. The application updates the interface to show:
+   - **You chose:** Player's move
+   - **Computer chose:** Computer's move
+
+---
+
+## Example Interface
+
+```bash
+ROCK PAPER SCISSORS
+
+[Rock] [Paper] [Scissors]
+
+You chose: Rock
+Computer chose: Paper
+Result: You win!
+
+[Play Again]
+```
+
+---
+
+## Learning Objectives
+
+This project demonstrates:
+
+- Using the **useState** hook
+- Handling **button click events**
+- Managing **application state**
+- Generating **random values in JavaScript**
+- Updating the UI dynamically in React
+
+---
+
+## Possible Improvements
+
+Future improvements could include:
+
+- Adding **winner logic**
+- Tracking **player and computer scores**
+- Adding **game reset functionality**
+- Improving **styling and layout**
+- Adding **animations or icons**
+
+
